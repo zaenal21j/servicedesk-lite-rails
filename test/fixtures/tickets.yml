@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer: one
+  subject: Export problem
+  description: MyText
+  status: open
+  priority: high
+
+two:
+  customer: two
+  subject: MyString
+  description: MyText
+  status: resolved
+  priority: low

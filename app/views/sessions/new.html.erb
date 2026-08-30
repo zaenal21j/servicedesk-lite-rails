@@ -1,0 +1,18 @@
+<% content_for :title, "Sign in | ServiceDesk Lite" %>
+<section class="login-wrap">
+  <div class="login-intro">
+    <p class="eyebrow">Support operations, simplified</p>
+    <h1>Keep every customer request moving.</h1>
+    <p>A focused Rails workspace for tracking customers, priorities, and support tickets from one clear dashboard.</p>
+  </div>
+  <div class="login-card">
+    <p class="eyebrow">Demo access</p>
+    <h2>Sign in</h2>
+    <%= form_with url: login_path, class: "form-card login-form" do |form| %>
+      <%= form.label :email do %>Email<%= form.email_field :email, value: "demo@servicedesk.test", autocomplete: "email", required: true %><% end %>
+      <%= form.label :password do %>Password<%= form.password_field :password, value: "demo1234", autocomplete: "current-password", required: true %><% end %>
+      <%= form.submit "Open dashboard", class: "button" %>
+    <% end %>
+    <p class="demo-note">Portfolio demo credentials are pre-filled.</p>
+  </div>
+</section>
